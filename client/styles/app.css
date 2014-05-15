@@ -1,0 +1,19 @@
+html, body, #map {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#result {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  color: #333;
+  background: rgba(255,255,255,0.5);
+  text-shadow: 1px 1px 2px #fff;
+}

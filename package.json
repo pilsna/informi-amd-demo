@@ -1,0 +1,13 @@
+{
+	"private": true,
+	"name": "informi-amd-demo",
+	"description": "Demo for Informi.dk JS workshop about using AMD Modules with ArcGIS / Dojo",
+	"version": "0.1.0",
+	"license": "mit",
+	"scripts": {
+		"start": "node server"
+	},
+	"dependencies": {
+		"express": "^3.4.8"
+	}
+}

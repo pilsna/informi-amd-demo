@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Informi AMD demo</title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <script>
+      var dojoConfig = {
+        async: true, // setup Dojo loader to only use AMD module definitions
+        paths: {
+          // App modules
+          'app': '/app',
+          // Common libraries
+          'bacon': '/lib/bacon',
+          'jquery': '/lib/jquery',
+          'lodash': '/lib/lodash',
+          'backbone': '/lib/backbone',
+          'underscore': '/lib/underscore'
+        }
+      };
+    </script>
+    <script src="http://js.arcgis.com/3.9/"></script>
+    <script>
+      require(['app/main']); // the entry point module is app/main.js
+    </script>
+  </head>
+  <body class="claro">
+    <div id="result"></div>
+    <div id="map"></div>
+  </body>
+</html>
